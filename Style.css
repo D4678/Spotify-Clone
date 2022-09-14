@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:ital,wght@0,300;1,300&family=Ubuntu&display=swap');
+
+body {
+    background-color: antiquewhite;        /*for background color */ 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+   font-family: 'Ubuntu';               /*introduced font family for home and about */ 
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;                /*for detailuing the navbar ul */ 
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 50px;                            /*set the image */ 
+    padding: 0 8px;  
+}
+
+.brand {
+    display: flex;
+    align-items: center;                   /*set The text of Spotify */ 
+    font-weight: bolder;
+    font-size: 1.3rem;         
+}
+
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu';
+    display: flex;
+    width: 75%;
+    margin: 23px auto;                /* to Point the mid */
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg.jpg');
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;         /* To Change The Play Pause Direction */
+    margin: 15px 0;
+}
+
+.icons{
+    margin-top: 12px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 100vh;
+}
+
+.songItemContainer{
+    margin-top: 70px;
+}
+.songItem{
+    height: 45px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+      width: 43px;
+      margin: 0 23px;
+      border-radius: 34px;
+}
+
+.timestamps{
+    margin: 0 23px;
+    cursor: pointer;
+}
+
+.timestamps i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 9vw;
+}
+
+.songInfo img{
+   height: 60px;
+    width: 80px; 
+    opacity: 0;
+    transition: opacity is ease-in;  
+}
